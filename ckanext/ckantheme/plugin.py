@@ -9,7 +9,7 @@ class CkanthemePlugin(plugins.SingletonPlugin):
     # IConfigurer
 
     def update_config(self, config: CKANConfig):
-        toolkit.add_template_directory(config_, 'templates')
-        toolkit.add_public_directory(config_, 'public')
+        toolkit.add_template_directory(config, 'templates')
+        toolkit.add_public_directory(config, 'public')
         toolkit.add_resource('fanstatic',
             'ckantheme')
