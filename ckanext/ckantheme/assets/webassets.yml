@@ -9,6 +9,6 @@
 
  ckantheme-css:
    filter: cssrewrite
-  output: ckanext-ckantheme/%(version)s-ckantheme.css
+  output: ckanext-ckantheme/%(version)s_ckantheme.css
   contents:
     - css/ckantheme.css
