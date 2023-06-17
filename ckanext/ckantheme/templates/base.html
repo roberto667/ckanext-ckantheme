@@ -2,5 +2,12 @@
 
 {% block styles %}
   {{ super() }}
- <link rel="stylesheet" href="../public/ckantheme.css" />
+
+  {# Import example_theme.css using Webassets.  'example_theme/' is
+    the name that the example_theme/webassets directory was registered
+    with when the toolkit.add_resource() function was called.
+    'example_theme' is the name to the Webassets bundle file,
+    registered inside webassets.yml file. #}
+  {% asset 'ckanext-ckantheme/ckantheme-css' %}
+  
 {% endblock %}
