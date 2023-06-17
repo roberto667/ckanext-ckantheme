@@ -7,8 +7,8 @@
 #     preload:
 #       - base/main
 
-# ckantheme-css:
-#   filter: cssrewrite
-#   output: ckanext-ckantheme/%(version)s-ckantheme.css
-#   contents:
-#     - css/ckantheme.css
+ ckantheme-css:
+   filter: cssrewrite
+  output: ckanext-ckantheme/%(version)s-ckantheme.css
+  contents:
+    - css/ckantheme.css
