@@ -41,7 +41,7 @@ To install ckanext-ckantheme:
 
      . /usr/lib/ckan/default/bin/activate
 
-2. Clone the source and install it on the virtualenv
+2. Clone the source and install it on the virtualenv:
 
     git clone https://github.com/roberto667/ckanext-ckantheme.git
     cd ckanext-ckantheme
