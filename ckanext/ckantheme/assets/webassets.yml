@@ -8,7 +8,7 @@
 #       - base/main
 
  ckantheme-css:
+ output: ckanext-ckantheme/%(version)s_ckantheme.css
    filter: cssrewrite
-  output: ckanext-ckantheme/%(version)s_ckantheme.css
   contents:
     - css/ckantheme.css
