@@ -20,4 +20,3 @@ class CkanthemePlugin(p.SingletonPlugin):
             'ckantheme')
         tk.add_resource('assets', 'ckantheme')
         tk.add_public_directory(config, 'assets/')
-
