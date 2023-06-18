@@ -1,6 +1,5 @@
 import ckan.plugins as p
 from ckan.plugins import toolkit as tk
-import ckan.plugins.toolkit as toolkit
 
 
 class CkanthemePlugin(p.SingletonPlugin):
