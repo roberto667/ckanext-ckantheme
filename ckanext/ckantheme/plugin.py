@@ -18,3 +18,4 @@ class CkanthemePlugin(p.SingletonPlugin):
         p.toolkit.add_resource('fanstatic',
             'ckantheme')
         p.toolkit.add_resource('assets', 'ckantheme')
+        p.toolkit.add_public_directory(config, 'assets/')
