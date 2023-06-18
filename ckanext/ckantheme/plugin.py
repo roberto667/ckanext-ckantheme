@@ -2,7 +2,7 @@ import ckan.plugins as p
 import ckan.plugins.toolkit as toolkit
 
 
-class CkanthemePlugin(plugins.SingletonPlugin):
+class CkanthemePlugin(p.SingletonPlugin):
     p.implements(p.IConfigurer)
 
     # IConfigurer
