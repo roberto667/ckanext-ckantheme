@@ -1,5 +1,5 @@
 import ckan.plugins as p
-import ckan.plugins as plugin
+import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 
