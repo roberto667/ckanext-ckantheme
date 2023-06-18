@@ -1,4 +1,5 @@
 import ckan.plugins as p
+from ckan.plugins import toolkit as tk
 import ckan.plugins.toolkit as toolkit
 
 
@@ -13,8 +14,9 @@ class CkanthemePlugin(p.SingletonPlugin):
         # that CKAN will use this plugin's custom templates.
         # 'templates' is the path to the templates dir, relative to this
         # plugin.py file.
-        p.toolkit.add_template_directory(config, 'templates')
-        p.toolkit.add_public_directory(config, 'public')
-        p.toolkit.add_resource('fanstatic',
+        tk.add_template_directory(config, 'templates')
+        tk.add_public_directory(config, 'public')
+        tk..add_resource('fanstatic',
             'ckantheme')
-        p.toolkit.add_resource('assets', 'ckantheme')
+        tk.add_resource('assets', 'ckantheme')
+        tk.add_public_directory(config, 'assets/')
