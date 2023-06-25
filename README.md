@@ -14,12 +14,12 @@ If your extension works across different versions you can add the following tabl
 
 Compatibility with core CKAN versions:
 
-| CKAN version    | Compatible?   |
-| --------------- | ------------- |
-| 2.6 and earlier | not tested    |
-| 2.7             | not tested    |
-| 2.8             | not tested    |
-| 2.9             | not tested    |
+| CKAN version     | Compatible?    |
+| ---------------- | -------------- |
+| 2.6 and earlier  | not tested     |
+| 2.7              | not tested     |
+| 2.8              | not tested     |
+| 2.9              |       yes      |
 
 Suggested values:
 
@@ -46,7 +46,6 @@ To install ckanext-ckantheme:
     git clone https://github.com/roberto667/ckanext-ckantheme.git
     cd ckanext-ckantheme
     pip install -e .
-	pip install -r requirements.txt
 
 3. Add `ckantheme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
