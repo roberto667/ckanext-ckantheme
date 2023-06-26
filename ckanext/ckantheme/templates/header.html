@@ -1,0 +1,6 @@
+{% ckan_extends %}
+
+{% block header_logo %}
+    <a class="logo" href="#"><img src="../public/marcaObservatorioIFS_Horizontal.png" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+    {% if g.site_description %}<h2><strong>{{ g.site_description|split('|', 0) }}</strong>{{ g.site_description|split('|', 1) }}</h2>{% endif %}
+{% endblock %}
