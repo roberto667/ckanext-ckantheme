@@ -1,12 +1,12 @@
 {% ckan_extends %}
 
 #css
-#{% block styles %}
-  #{{ super() }}
-#
- # {% asset 'ckantheme/ckantheme-css' %}
+{% block styles %}
+  {{ super() }}
+
+  {% asset 'ckantheme/ckantheme-css' %}
   
-#{% endblock %}
+{% endblock %}
 #favicon
 {% block links -%}
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
