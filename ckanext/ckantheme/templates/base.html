@@ -1,6 +1,9 @@
-#css
 {% ckan_extends %}
-
+{% block meta %}
+  {{ super() }}
+  <meta property="og:title" content="opendata.government.bg" />
+{% endblock %}
+#css
 {% block styles %}
   {{ super() }}
 
