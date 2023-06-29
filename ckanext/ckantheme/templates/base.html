@@ -1,8 +1,5 @@
 {% ckan_extends %}
-{% block meta %}
-  {{ super() }}
-  <meta property="og:title" content="OBMI" />
-{% endblock %}
+
 #css
 {% block styles %}
   {{ super() }}
@@ -12,5 +9,5 @@
 {% endblock %}
 #favicon
 {% block links -%}
-  <link rel="shortcut icon" type="image/x-icon" href="../public/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 {% endblock -%}
