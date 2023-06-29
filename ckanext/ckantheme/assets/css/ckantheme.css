@@ -3,21 +3,21 @@
    ===================================================== */
 
 .account-masthead {
-    background-color: rgb(220, 114, 114);
+    background-color: rgb(159, 37, 180);
 }
 /* The "bubble" containing the number of new notifications. */
 .account-masthead .account .notifications a span {
-  background-color: black;
+  background-color: rgb(218, 60, 60);
 }
 /* The text and icons in the user account info. */
 .account-masthead .account ul li a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(60, 158, 224, 0.6);
 }
 /* The user account info text and icons, when the user's pointer is hovering
    over them. */
 .account-masthead .account ul li a:hover {
-  color: rgba(255, 255, 255, 0.7);
-  background-color: black;
+  color: rgba(15, 11, 47, 0.7);
+  background-color: rgb(88, 145, 84);
 }
 
 
@@ -26,13 +26,13 @@
    ======================================================================== */
 
 .masthead {
-  background-color: #3d3d3d;
+  background-color: #f0c817;
 }
 /* The "navigation pills" in the masthead (the links to Datasets,
    Organizations, etc) when the user's pointer hovers over them. */
 .masthead .navigation .nav-pills li a:hover {
-  background-color: rgb(48, 48, 48);
-  color: white;
+  background-color: rgb(168, 113, 24);
+  color: rgb(21, 174, 33);
 }
 /* The "active" navigation pill (for example, when you're on the /dataset page
    the "Datasets" link is active). */
@@ -42,8 +42,8 @@
 /* The "box shadow" effect that appears around the search box when it
    has the keyboard cursor's focus. */
 .masthead input[type="text"]:focus {
-  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(209, 61, 130, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(209, 61, 130, 0.7);
 }
 
 
@@ -62,12 +62,12 @@
 }
 /* Change the colors of the "Search Your Data" box. */
 .homepage .module-search .module-content {
-  color: rgb(68, 68, 68);
-  background-color: white;
+  color: rgb(245, 165, 165);
+  background-color: rgb(151, 187, 31);
 }
 /* Change the background color of the "Popular Tags" box. */
 .homepage .module-search .tags {
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(20, 44, 30);
 }
 /* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
    and "Search Your Data" boxes line up. */
@@ -79,7 +79,7 @@
 }
 /* Add a border line between the top and bottom halves of the front page. */
 .homepage [role="main"] {
-  border-top: 1px solid rgb(204, 204, 204);
+  border-top: 1px solid rgb(39, 21, 21);
 }
 
 
@@ -89,15 +89,15 @@
 
 .site-footer,
 body {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(38, 17, 63);
 }
 /* The text in the footer. */
 .site-footer,
 .site-footer label,
 .site-footer small {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 0, 191, 0.6);
 }
 /* The link texts in the footer. */
 .site-footer a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 68, 255, 0.6);
 }
