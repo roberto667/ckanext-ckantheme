@@ -3,7 +3,7 @@
    ===================================================== */
 
    .account-masthead {
-    background-color: rgb(94 29 106);
+    background-color: #00420C;
 }
 /* The "bubble" containing the number of new notifications. */
 .account-masthead .account .notifications a span {
@@ -26,7 +26,8 @@
    ======================================================================== */
 
 .masthead {
-  background-color: #9000b4;
+  background-color: #57e55c;
+  background-image:radial-gradient(ellipse at center, #339144 1%, #00510f);
 }
 /* The "navigation pills" in the masthead (the links to Datasets,
    Organizations, etc) when the user's pointer hovers over them. */
@@ -71,11 +72,11 @@ p{
 /* Change the colors of the "Search Your Data" box. */
 .homepage .module-search .module-content {
   color: rgb(68, 68, 68);
-  background-color: rgb(85, 21, 175);
+  background-color: #26316e;
 }
 /* Change the background color of the "Popular Tags" box. */
 .homepage .module-search .tags {
-  background-color: rgb(41, 0, 106);
+  background-color: rgb(10 17 56);
 }
 /* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
    and "Search Your Data" boxes line up. */
@@ -95,9 +96,12 @@ p{
    The footer at the bottom of the site
    ==================================== */
 
+.homepage layout-1 .main .main{
+  background-color: white;
+}
 .site-footer,
 body {
-  background-color: rgb(94 29 106);
+  background-color: #00420C;
 }
 /* The text in the footer. */
 .site-footer,
