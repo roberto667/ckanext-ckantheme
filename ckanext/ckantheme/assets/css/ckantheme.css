@@ -19,6 +19,9 @@
   color: rgba(255, 255, 255, 0.7);
   background-color: black;
 }
+.homepage [role=main] {
+    padding: 0px 0;
+}
 
 
 /* ========================================================================
@@ -71,7 +74,7 @@ p{
 }
 /* Change the colors of the "Search Your Data" box. */
 .homepage .module-search .module-content {
-  color: rgb(68, 68, 68);
+  color: rgb(255, 255, 255);
   background-color: #26316e;
 }
 /* Change the background color of the "Popular Tags" box. */
@@ -88,17 +91,23 @@ p{
 }
 /* Add a border line between the top and bottom halves of the front page. */
 .homepage [role="main"] {
-  border-top: 1px solid rgb(204, 204, 204);
+  border-top: 0px solid rgb(204, 204, 204);
 }
 
+/*the background before the final template, where is teh groups, organization, etc */
 
+.homepage.layout-1 [role="main"] .main {
+  background: white;
+}
+
+.homepage.layout-1 [role="main"] .main.hero {
+  background-color: #dbdbdb
+}
 /* ====================================
    The footer at the bottom of the site
    ==================================== */
 
-.homepage layout-1 .main .main {
-  background-color: white;
-}
+
 .site-footer,
 body {
   background-color: #00420C;
@@ -112,4 +121,20 @@ body {
 /* The link texts in the footer. */
 .site-footer a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/*the image logo*/
+.masthead .logo img {
+    max-height: 80px;
+}
+
+/*the optios buttons(datasets, about, etc)*/
+.masthead .navigation ul.nav-pills {
+    margin-bottom: 11px;
+    margin-top:16px;
+    font-size: 17px;
+    
+}
+.masthead .navigation ul.nav-pills li a {
+  border-radius:25px;
 }
