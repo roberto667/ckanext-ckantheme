@@ -138,3 +138,9 @@ body {
 .masthead .navigation ul.nav-pills li a {
   border-radius:25px;
 }
+/*search on the top*/
+.masthead .site-search input {
+    width: 200px;
+  margin-top:20px;
+    padding: 5px 10px;
+}
