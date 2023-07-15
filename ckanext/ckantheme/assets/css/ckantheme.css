@@ -4,7 +4,9 @@
 
    .account-masthead {
     background-color: #00420C;
+    height:70px;
 }
+
 /* The "bubble" containing the number of new notifications. */
 .account-masthead .account .notifications a span {
   background-color: black;
@@ -124,8 +126,14 @@ body {
 }
 
 /*the image logo*/
+.masthead .logo{
+  
+}
 .masthead .logo img {
     max-height: 80px;
+  position:absolute;
+  left:400px;
+  top:0;
 }
 
 /*the optios buttons(datasets, about, etc)*/
