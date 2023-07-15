@@ -3,6 +3,7 @@
 {% block header_logo %}
     <a class="logo" href="{{ h.url('home.index') }}"><img src="/logo.png" alt="OBMI" title="OBMI" /></a>
 {% endblock %}
-{% block account_masthead %}
+{% block eader_wrapper%}
+{{ block.super }}
     <a class="logo" href="{{ h.url('home.index') }}"><img src="/logo.png" alt="OBMI" title="OBMI" /></a>
 {% endblock %}
