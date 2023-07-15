@@ -5,6 +5,19 @@
    .account-masthead {
     background-color: #00420C;
     height:70px;
+     margin-bottom:200px;
+     
+}
+
+/*the image logo*/
+ .logo img {
+    max-width: 800px;
+  max-height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+   
 }
 
 /* The "bubble" containing the number of new notifications. */
@@ -13,13 +26,14 @@
 }
 /* The text and icons in the user account info. */
 .account-masthead .account ul li a {
-  color: rgba(255 255 255);
+  color: #0164df;
+  background-color:white;
 }
 /* The user account info text and icons, when the user's pointer is hovering
    over them. */
 .account-masthead .account ul li a:hover {
-  color: rgba(255, 255, 255, 0.7);
-  background-color: black;
+  color: rgb(255 255 255 / 70%);
+  background-color: #0164df;
 }
 .homepage [role=main] {
     padding: 0px 0;
@@ -31,6 +45,7 @@
    ======================================================================== */
 
 .masthead {
+  margin:2px;
   background-color: #57e55c;
   background-image:radial-gradient(ellipse at center, #339144 1%, #00510f);
 }
@@ -125,16 +140,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*the image logo*/
-.masthead .logo{
-  
-}
-.masthead .logo img {
-    max-height: 80px;
-  position:absolute;
-  left:400px;
-  top:0;
-}
+
 
 /*the optios buttons(datasets, about, etc)*/
 .masthead .navigation ul.nav-pills {
