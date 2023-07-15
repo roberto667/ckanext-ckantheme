@@ -166,10 +166,21 @@ body {
     margin-bottom: 11px;
     margin-top:16px;
     font-size: 17px;
+  
     
 }
 .masthead .navigation ul.nav-pills li a {
-  border-radius:25px;
+  //border-radius:25px;
+  color: #ffffff;
+   border: 1px solid white
+  
+}
+.masthead .navigation ul.nav-pills li a:hover {
+  //border-radius:25px;
+  color: #339144;
+  background:white;
+  border: 1px solid #339144;
+  
 }
 /*search on the top*/
 .masthead .site-search input {
