@@ -8,7 +8,15 @@
      padding-bottom:400px;
      
 }
-
+.account-masthead  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left:;
+}
+.account-masthead .account {
+    float: right;
+}
 /*the image logo*/
  .logo img {
     max-width: 800px;
@@ -29,8 +37,12 @@
   color: #0164df;
   background-color:white;
   font-weight: 600;
+  
   border: 1px solid blue; /* Altere "blue" para a cor desejada */
 
+}
+.account-masthead .account ul li a.sub {
+    font-weight: 600;
 }
 .account-masthead .account ul li {
     display: block;
