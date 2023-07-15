@@ -3,9 +3,9 @@
    ===================================================== */
 
    .account-masthead {
-    background-color: #00420C;
+    background: #ffffff;
     height:70px;
-     margin-bottom:200px;
+     padding-bottom:400px;
      
 }
 
@@ -28,6 +28,13 @@
 .account-masthead .account ul li a {
   color: #0164df;
   background-color:white;
+  font-weight: 600;
+  border: 1px solid blue; /* Altere "blue" para a cor desejada */
+
+}
+.account-masthead .account ul li {
+    display: block;
+    border-left: 1px solid #ffffff;
 }
 /* The user account info text and icons, when the user's pointer is hovering
    over them. */
