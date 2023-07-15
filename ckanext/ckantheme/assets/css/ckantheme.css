@@ -64,7 +64,7 @@
    ======================================================================== */
 
 .masthead {
-  margin:2px;
+  margin:0px;
   background-color: #57e55c;
   background-image:radial-gradient(ellipse at center, #339144 1%, #00510f);
 }
