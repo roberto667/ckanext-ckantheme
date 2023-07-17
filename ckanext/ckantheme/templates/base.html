@@ -8,7 +8,11 @@
   
 {% endblock %}
 #title
-{% block title %}My Subtitle - OBMI{% endblock %}
+{%- block title -%}
+        {%- block subtitle %}{% endblock -%}
+        {%- if self.subtitle()|trim %} {{ g.template_title_delimiter }} {% endif -%}
+        OBMI
+      {%- endblock -%}
 #favicon
 {% block links -%}
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
