@@ -185,6 +185,11 @@ body {
   border: 1px solid #339144;
   
 }
+.masthead .navigation .nav-pills li.active a {
+    background-color: rgb(255 255 255);
+  color: #339144;
+   border: 1px solid #339144;
+}
 /*search on the top*/
 .masthead .site-search input {
     width: 200px;
