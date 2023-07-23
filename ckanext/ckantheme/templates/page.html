@@ -3,8 +3,11 @@
 {% block maintag %}
 {{ super() }}
 
- {%block img_campus %}
+{% block toolbar %}
+
+{% endblock %}
+
+{%block img_campus %}
  <p class="imgcampus"> NOSSO CAMPI</p>
-    <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs">
+    <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
  {% endblock -%}
-{% endblock -%}
