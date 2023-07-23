@@ -4,6 +4,18 @@
   {{ _("CKAN's data previewing tool has many powerful features") }}
 {% endblock %}
 
+#replace title in promoted image
+{% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Welcome to OBEMI") }}</h1>
+      <p>
+        {% trans %}This is a nice introductory paragraph about OBEMI or the site
+        in general. We don't have any copy to go here yet but soon we will
+        {% endtrans %}
+      </p>
+    {% endif %}
+
 {# Replace the promoted image. #}
 {% block home_image_content %}
   <a class="media-image" href="#">
