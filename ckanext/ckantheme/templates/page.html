@@ -1,11 +1,15 @@
 {% ckan_extends %}
 
 {% block maintag %}
-    {{ super() }}
-    {% block toolbar %}
+    {% block main_content %}
+        {{ super() }}
+        {% block toolbar %}
 
+        {% endblock %}
     {% endblock %}
+
     {% block img_campus %}
+        <div style="clear: both;"></div> {# Div que força a imagem abaixo dos elementos flutuantes #}
         <p class="imgcampus">NOSSO CAMPI</p>
         <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
     {% endblock %}
