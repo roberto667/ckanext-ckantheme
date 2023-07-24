@@ -1,16 +1,11 @@
 {% ckan_extends %}
 
-{% block maintag %}
+{% block maintag2 %}
     {% block main_content %}
         {{ super() }}
         {% block toolbar %}
 
         {% endblock %}
-    {% endblock %}
-
-    {# Bloco vazio "main_content" (se houver necessidade de estendê-lo em templates filhos) #}
-    {% block main_content %}
-
     {% endblock %}
 
     {% block img_campus %}
@@ -20,4 +15,8 @@
             <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
         </div>
     {% endblock %}
+{% endblock %}
+
+{% block maintag %}
+    
 {% endblock %}
