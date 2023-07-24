@@ -208,3 +208,15 @@ body {
 font-weight: bold; /* Aplica negrito ao texto */
 font-size: 24px;
 }
+
+.row.wrapper.no-nav p{
+  font-size: 20px;
+  text-align: justify;
+}
+.row.wrapper.no-nav h1{
+  text-align: center;
+  color:#16510C;
+}
+.module-content{
+  padding:30px 450px 0px 450px;
+}
