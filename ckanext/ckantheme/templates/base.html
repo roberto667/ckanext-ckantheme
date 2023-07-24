@@ -11,7 +11,7 @@
 {%- block title -%}
         {%- block subtitle %}{% endblock -%}
         {%- if self.subtitle()|trim %} {{ g.template_title_delimiter }} {% endif -%}
-        OBEMI
+        {{ g.site_title }}
       {%- endblock -%}
 #favicon
 {% block links -%}

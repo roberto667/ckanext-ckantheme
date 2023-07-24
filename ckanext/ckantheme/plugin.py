@@ -8,6 +8,7 @@ class CkanthemePlugin(p.SingletonPlugin):
     # IConfigurer
 
     def update_config(self, config):
+        config['ckan.site_title'] = 'OBEMI'
 
         # Add this plugin's templates dir to CKAN's extra_template_paths, so
         # that CKAN will use this plugin's custom templates.
