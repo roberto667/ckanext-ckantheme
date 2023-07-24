@@ -1,28 +1,21 @@
 {% ckan_extends %}
 
-{% block maintag2 %}
-    {% block maintag %}<div class="main">{% endblock %}
-{% endblock %}
+{%- block content %}
+  {% block maintag %}<div class="main">{% endblock %}
 
-{% block main_content2 %}
   {% block main_content %}
     {{ super() }}
     {% block toolbar %}
 
     {% endblock %}
   {% endblock %}
-{% endblock %}
 
-{% block img_campus %}
-  <div style="clear: both;"></div> {# Div that clears below floating elements #}
-  <div class="imgcampus">
-    <p>NOSSO CAMPUS</p>
-    <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
-  </div>
-{% endblock %}
+  {% block img_campus %}
+    <div style="clear: both;"></div> {# Div that clears below floating elements #}
+    <div class="imgcampus">
+      <p>NOSSO CAMPUS</p>
+      <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
+    </div>
+  {% endblock %}
 </div>
-
-{%- block content %}
-
-{% endblock -%}
-
+{%- endblock %}
