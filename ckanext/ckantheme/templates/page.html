@@ -1,19 +1,16 @@
 {% ckan_extends %}
 
-{% block main_content %}
-{{ super() }}
-{% block toolbar %}
-
-{% endblock %}
-{% endblock %}
-
 {% block maintag %}
-{{ super() }}
+    {{ super() }}
+    {% block main_content %}
+        {{ super() }}
+        {% block toolbar %}
+
+        {% endblock %}
+    {% endblock %}
 {% endblock %}
 
-
-
-{%block img_campus %}
- <p class="imgcampus"> NOSSO CAMPI</p>
+{% block img_campus %}
+    <p class="imgcampus">NOSSO CAMPI</p>
     <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
- {% endblock -%}
+{% endblock %}
