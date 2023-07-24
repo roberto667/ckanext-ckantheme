@@ -12,7 +12,6 @@
     padding-right: 0px;
     padding-left: 0px;
     margin-right: 0px;
-    margin-left:;
 }
 .account-masthead .account {
     float: right;
@@ -173,13 +172,11 @@ body {
     
 }
 .masthead .navigation ul.nav-pills li a {
-  //border-radius:25px;
   color: #ffffff;
    border: 1px solid white
   
 }
 .masthead .navigation ul.nav-pills li a:hover {
-  //border-radius:25px;
   color: #339144;
   background:white;
   border: 1px solid #339144;
@@ -195,4 +192,19 @@ body {
     width: 200px;
     margin-top:20px;
     padding: 5px 10px;
+}
+/*Part of text img Nossos Campi*/
+.imgcampus{
+  position:relative;
+  text-align: center;
+  
+}
+.imgcampus img{
+  max-width: 636px; /* Define o tamanho mínimo de largura da imagem */
+  max-height: 438px;
+}
+.imgcampus p{
+ color:#16510C;
+font-weight: bold; /* Aplica negrito ao texto */
+font-size: 24px;
 }
