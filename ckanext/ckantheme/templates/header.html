@@ -1,9 +1,15 @@
 {% ckan_extends %}
 
 {% block header_logo %}
-
+    {# Conteúdo do bloco header_logo, caso queira adicionar algo específico aqui #}
 {% endblock %}
+
 {% block header_account %}
-   {{ super() }}
-   <a class="logo" href="{{ h.url('home.index') }}"><img src="/logo.png" alt="OBEMI" title="OBEMI" /></a>
+    {{ super() }}
+    <a class="logo" href="{{ h.url('home.index') }}">
+        <img src="/logo.png" alt="OBEMI" title="OBEMI" />
+    </a>
+    {% block header_site_search %}
+        {{ super() }}
+    {% endblock %}
 {% endblock %}
