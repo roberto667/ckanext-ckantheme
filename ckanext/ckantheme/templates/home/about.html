@@ -9,7 +9,7 @@
 {% block primary %}
   <article class="module" role="main">
     <div class="module-content">
-      {% block about %}
+      {% block about_content %}
         {% if g.site_about %}
           {{ h.render_markdown(g.site_about) }}
         {% else %}
@@ -20,14 +20,15 @@
     </div>
   </article>
 {% endblock %}
-{% block img_campus %}
- <div class="mainimgcampus">
-    <div style="clear: both;"></div> {# Div that clears below floating elements #}
-    <div class="imgcampus">
-      <p>NOSSO CAMPUS</p>
-      <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
-    </div>
-  </div>
-  {% endblock %}
 
-{% block secondary %}{% endblock %}
+{% block secondary %}
+  {% block img_campus %}
+    <div class="mainimgcampus">
+      <div style="clear: both;"></div> {# Div that clears below floating elements #}
+      <div class="imgcampus">
+        <p>NOSSO CAMPUS</p>
+        <img src="/campusIFS.png" alt="Campus_ifs" title="Campus_ifs" class="campusifs">
+      </div>
+    </div>
+  {% endblock %}
+{% endblock %}
