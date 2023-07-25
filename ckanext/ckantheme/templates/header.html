@@ -9,7 +9,19 @@
     <a class="logo" href="{{ h.url('home.index') }}">
         <img src="/logo.png" alt="OBEMI" title="OBEMI" />
     </a>
-    {% block header_site_search %}
-        {{ super() }}
+    {% block header_site_search2 %}
+        {# Conteúdo do bloco header_site_search2, caso queira adicionar algo específico aqui #}
+        <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
+            <div class="field">
+                <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
+                <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Search') }}" aria-label="{{ _('Search datasets') }}"/>
+                <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
     {% endblock %}
+{% endblock %}
+
+{% block header_site_search %}
+    {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
+    {{ super() }}
 {% endblock %}
