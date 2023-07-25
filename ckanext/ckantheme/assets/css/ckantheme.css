@@ -18,7 +18,7 @@
 }
 /*the image logo*/
  .logo img {
-    max-width: 800px;
+    max-width: 40vw;
   max-height: 100vh;
   position: absolute;
   left: 50%;
@@ -67,8 +67,7 @@
 
 .masthead {
   margin:0px;
-  background-color: #57e55c;
-  background-image:radial-gradient(ellipse at center, #339144 1%, #00510f);
+  background-color: #16510C;
 }
 /* The "navigation pills" in the masthead (the links to Datasets,
    Organizations, etc) when the user's pointer hovers over them. */
@@ -148,17 +147,30 @@ p{
 
 .site-footer,
 body {
-  background-color: #00420C;
+  background-color: #F6F6F6;
+  background: #F6F6F6;
 }
 /* The text in the footer. */
 .site-footer,
 .site-footer label,
 .site-footer small {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(0 0 0);
 }
 /* The link texts in the footer. */
-.site-footer a {
-  color: rgba(255, 255, 255, 0.6);
+.site-footer .col-md-8{
+  max-width:600px;
+  padding:0px;
+  text-align:right;
+  position:relative;
+}
+.site-footer .col-md-4{
+  max-width:600px;
+  padding:0px;
+  position:absolute;
+}
+.site-footer .col-md-8 .list-unstyled a {
+  color: rgb(0 0 0);
+  font-size:12px;
 }
 
 
@@ -193,28 +205,33 @@ body {
     margin-top:20px;
     padding: 5px 10px;
 }
-/*Part of text img Nossos Campi*/
+
+.main{
+  background:#DEDEDF;
+  padding-top:0px;
+}
 .imgcampus{
   position:relative;
   text-align: center;
   
 }
 .imgcampus img{
-  max-width: 636px; /* Define o tamanho mínimo de largura da imagem */
-  max-height: 438px;
+  max-width: 60vw; /* Define o tamanho mínimo de largura da imagem */
+  max-height: 40vw;
 }
 .imgcampus p{
  color:#16510C;
 font-weight: bold; /* Aplica negrito ao texto */
-font-size: 24px;
+font-size: 2.1vw;
 }
 
 .row.wrapper.no-nav p{
-  font-size: 20px;
+  font-size: 1.7vw;
   text-align: justify;
 }
 .row.wrapper.no-nav h1{
   text-align: center;
+  font-size:2.3vw;
   color:#16510C;
 }
 .module-content{
