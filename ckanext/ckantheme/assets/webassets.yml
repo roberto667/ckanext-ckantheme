@@ -11,5 +11,5 @@
   output: ckanext-ckantheme/%(version)s-ckantheme.css
   filters: cssrewrite
   contents:
-    - css/ckantheme.css
+    #- css/ckantheme.css
     - css/ckanthemeantigo.css
