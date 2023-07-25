@@ -12,3 +12,4 @@
   filters: cssrewrite
   contents:
     - css/ckantheme.css
+    - css/ckanthemeantigo.css
