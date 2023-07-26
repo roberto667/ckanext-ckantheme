@@ -26,14 +26,27 @@
     transform: translateX(-50%);
     z-index: 1;
 }
-.section.site-search.simple-input #field-sitewide-search{
-  background:red;
+.section.site-search.simple-input input::placeholder{
+  background:#DEDEDF;
+  color:#000;
+  font-size:18px;
   
 }
-.section.site-search.simple-input {
+.section.site-search.simple-input input{
+  background:#DEDEDF;
+  
+}
+.section.site-search.simple-input .field  {
   position:absolute;
-  left:300px;
+  left:700px;
   top:200px;
+  text-align: center;
+  width:418.67px;
+  
+}
+.section.site-search.simple-input .field .btn-search {
+  color:#000;
+  
 }
 
 /* The "bubble" containing the number of new notifications. */
