@@ -18,14 +18,22 @@
 }
 /*the image logo*/
  .logo img {
-    max-width: 40vw;
-  max-height: 100vh;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  z-index: 1;
-   
+    max-width: 25vw;
+    max-height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.section.site-search.simple-input #field-sitewide-search{
+  background:red;
+  
+}
+.section.site-search.simple-input {
+  position:absolute;
+  left:300px;
+  top:200px;
 }
 
 /* The "bubble" containing the number of new notifications. */
@@ -144,11 +152,23 @@ p{
    The footer at the bottom of the site
    ==================================== */
 
-
+.homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 {
+  padding-right:15px;
+  padding-left:15px;
+}
+.homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 .module-content.box{
+  padding-right:15px;
+  padding-left:15px;
+}
+.homepage.layout-1 [role="main"] .main.hero .row.row1 {
+  height:356px;
+  width:1170px;
+  
+}
 .site-footer,
 body {
   background-color: #F6F6F6;
-  background: #F6F6F6;
+  background: #16510C;
 }
 /* The text in the footer. */
 .site-footer,
