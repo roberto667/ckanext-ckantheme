@@ -9,6 +9,7 @@ class CkanthemePlugin(p.SingletonPlugin):
 
     def update_config(self, config):
         config['ckan.site_title'] = 'OBEMI'
+        config['ckan.locale_default'] = 'pt_BR'
 
         # Add this plugin's templates dir to CKAN's extra_template_paths, so
         # that CKAN will use this plugin's custom templates.
