@@ -7,7 +7,9 @@
 {% block header_account %}
     {{ super() }}
     <div class="logo">
-        <img class="logo" src="/logo.png" alt="OBEMI" title="OBEMI" />
+        <a class="logo" href="{{ h.url('home.index') }}">
+            <img src="/logo.png" alt="OBEMI" title="OBEMI" />
+        </a>
         {% block header_site_search2 %}
             {# Conteúdo do bloco header_site_search2, caso queira adicionar algo específico aqui #}
             <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
@@ -23,10 +25,4 @@
 
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
-{% endblock %}
-
-
-{% block header_account_logged %}
-    {{ super() }}
-    <a class="logo" href="{{ h.url('home.index') }}">Inicio</a>
 {% endblock %}
