@@ -4,8 +4,8 @@
 
    .account-masthead {
     background: #ffffff;
-    height:70px;
-     padding-bottom:400px;
+    height:;
+     padding-bottom:;
      
 }
 .account-masthead  .container {
@@ -18,13 +18,14 @@
 }
 /*the image logo*/
  .logo img {
-    max-width: 25vw;
-    max-height: 100vh;
+    max-width: 40vw;
+    max-height: 256vh;
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     z-index: 1;
+    padding-bottom:2px;
 }
 .section.site-search.simple-input input::placeholder{
   background:#DEDEDF;
@@ -38,12 +39,18 @@
 }
 .section.site-search.simple-input .field  {
   position:absolute;
-  left:700px;
-  top:200px;
+  left: 37vw;
+  top: 16vw;
   text-align: center;
+  padding-top: 2px;
   width:418.67px;
-  
+  z-index:1;
 }
+body .logo{
+  padding-top:400px;
+  background: #ffffff;
+}
+
 .section.site-search.simple-input .field .btn-search {
   color:#000;
   
