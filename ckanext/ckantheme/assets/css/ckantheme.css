@@ -17,7 +17,7 @@
     float: right;
 }
 /*the image logo*/
- .logo img {
+img.logo  {
     max-width: 40vw;
     max-height: 256vh;
     position: absolute;
