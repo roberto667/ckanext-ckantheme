@@ -46,7 +46,7 @@ img.logo  {
   width:418.67px;
   z-index:1;
 }
-body .logo{
+body img.logo{
   padding-top:400px;
   background: #ffffff;
 }
