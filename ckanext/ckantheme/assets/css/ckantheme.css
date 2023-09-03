@@ -17,7 +17,7 @@
     float: right;
 }
 /*the image logo*/
-img.logo  {
+.logo  img{
     max-width: 40vw;
     max-height: 256vh;
     position: absolute;
@@ -46,7 +46,7 @@ img.logo  {
   width:418.67px;
   z-index:1;
 }
-body img.logo{
+body .logo{
   padding-top:400px;
   background: #ffffff;
 }
