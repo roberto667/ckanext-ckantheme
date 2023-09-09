@@ -24,7 +24,16 @@
         {% endblock %}
     </div>
 {% endblock %}
-
+{% block header_account_logged %}
+{% block header_initial_page %}
+<li>
+    <a href="{{ h.url_for('home.index') }}" title="Inicio">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      <span class="text">{{ _('Inicio') }}</span>
+    </a>
+  </li>
+{% endblock %}
+{% endblock %}
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
 {% endblock %}
