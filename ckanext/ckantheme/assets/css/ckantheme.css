@@ -213,7 +213,7 @@ p{
 .site-footer,
 body {
   background-color: #F6F6F6;
-  background: #16510C;
+  background: #ffffff;
 }
 /* The text in the footer. */
 .site-footer,
@@ -272,7 +272,7 @@ body {
 }
 
 .main{
-  background:#DEDEDF;
+  background:#16510C;
   padding-top: 0px;
 }
 .imgcampus{
@@ -283,7 +283,7 @@ body {
 }
 [role=main], .main {
   position:relative;
-  padding-bottom:0px;
+  padding-bottom:100px;
 }
 .imgcampus img{
   max-width: 60vw; /* Define o tamanho mínimo de largura da imagem */
