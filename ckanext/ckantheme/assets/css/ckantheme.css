@@ -195,11 +195,17 @@ p{
   text-align:center;
   position:absolute;
 }
-.site-footer li{
-  width:99.7%;
+.site-footer .list-unstyled{
+  position:relative;
+}
+.site-footer  a{
   text-align:right;
-  position:absolute;
+  position: absolute;
   margin-top:20px;
+  height:20px;
+  width:100%;
+  z-index: 1; /* Certifique-se de que o z-index seja maior que elementos que podem sobrepor */
+
 }
 .site-footer .footerimg{
   width:auto;
