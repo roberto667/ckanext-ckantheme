@@ -16,12 +16,12 @@
                 <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
                     <div class="field">
                         <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
-                        <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Search datasets') }}" aria-label="{{ _('Search datasets') }}"/>
+                        <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Procurar Base de Dados') }}" aria-label="{{ _('Search datasets') }}"/>
                         <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/organizations') %}
+            {% if request.url.endswith('/organizations/') %}
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
                     <div class="field">
@@ -40,7 +40,7 @@
 {% block header_account_logged %}
 {{ super() }}
 {% block header_initial_page %}
-<li class="Inicio">
+<li>
     <a href="{{ h.url_for('home.index') }}" title="Inicio">
       <i class="fa fa-initial" aria-hidden="true"></i>
       <span class="text">{{ _('Inicio') }}</span>
