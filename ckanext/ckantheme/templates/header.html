@@ -21,12 +21,12 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/organizations') %}
+            {% if request.url.endswith('/organizations/') %}
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
                     <div class="field">
                         <label for="field-organization-search">{{ _('Search Organizations') }}</label>
-                        <input id="field-organization-search" type="text" class="form-control" name="organization_q" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
+                        <input id="field-organization-search" type="text" class="form-control" name="campus_q" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
                         <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
@@ -38,6 +38,7 @@
     </div>
 {% endblock %}
 {% block header_account_logged %}
+{{ super() }}
 {% block header_initial_page %}
 <li>
     <a href="{{ h.url_for('home.index') }}" title="Inicio">
