@@ -21,9 +21,7 @@
 
   {% block organizations_list %}
     {% if page.items or request.params %}
-      {% if page.items %}
-        {% snippet "organization/snippets/organization_list.html", organizations=page.items %}
-      {% endif %}
+      
     {% else %}
       <p class="empty">
         {{ _('There are currently no organizations for this site') }}.
