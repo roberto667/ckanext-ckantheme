@@ -18,17 +18,21 @@
 
 {% block primary_content_inner %}
   <h1 class="hide-heading">{% block page_heading %}{{ _('Organizations') }}{% endblock %}</h1>
+  {% block organizations_search_form %}
 
+  {% endblock %}
   {% block organizations_list %}
     {% if page.items or request.params %}
-      
+      {% if page.items %}
+        {% snippet "organization/snippets/organization_list.html", organizations=page.items %}
+      {% endif %}
     {% else %}
       <p class="empty">
         {{ _('There are currently no organizations for this site') }}.
         {% if h.check_access('organization_create') %}
           {% link_for _('How about creating one?'), named_route=group_type+'.new' %}</a>.
         {% endif %}
-      </p>zz
+      </p>
     {% endif %}
   {% endblock %}
   {% block page_pagination %}
