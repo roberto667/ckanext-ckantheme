@@ -21,7 +21,7 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/organizations/') %}
+            {% if request.url.endswith('/organizations') %}
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
                     <div class="field">
