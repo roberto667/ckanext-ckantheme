@@ -20,7 +20,15 @@
                 </div>
             </form>  
             
-            {% snippet 'snippets/search_form.html', form_id='organization-search-form', type='organization', query=q, sorting_selected=sort_by_selected, count=page.item_count, placeholder=_('Search organizations...'), show_empty=request.params, no_bottom_border=true if page.items, sorting = [(_('Name Ascending'), 'title asc'), (_('Name Descending'), 'title desc')] %}            
+            <div class="section site-search simple-input">
+                <form action="{% url_for 'organization.search' %}" method="get">
+                    <div class="field">
+                        <label for="field-organization-search">{{ _('Search Organizations') }}</label>
+                        <input id="field-organization-search" type="text" class="form-control" name="q" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
+                        <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>           
         {% endblock %}
     </div>
 {% endblock %}
