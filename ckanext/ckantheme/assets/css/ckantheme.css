@@ -185,6 +185,25 @@ p{
   width:1170px;
   
 }
+
+.site-footer .container{
+  margin:0px 0px 0px 0px;
+  width:auto;
+}
+.site-footer .Version{
+  width:100%;
+  text-align:center;
+  position:absolute;
+}
+.site-footer li{
+  width:99.7%;
+  text-align:right;
+  position:absolute;
+  margin-top:20px;
+}
+.site-footer .footerimg{
+  width:auto;
+}
 .site-footer,
 body {
   background-color: #F6F6F6;
