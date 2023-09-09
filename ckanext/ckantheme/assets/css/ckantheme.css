@@ -248,16 +248,22 @@ body {
 
 .main{
   background:#DEDEDF;
-  padding-top:0px;
+  padding-top: 0px;
 }
 .imgcampus{
   position:relative;
   text-align: center;
+  background-color: #DEDEDF;
   
+}
+[role=main], .main {
+  position:relative;
+  padding-bottom:0px;
 }
 .imgcampus img{
   max-width: 60vw; /* Define o tamanho mínimo de largura da imagem */
   max-height: 40vw;
+  
 }
 .imgcampus p{
  color:#16510C;
