@@ -2,340 +2,312 @@
    The "account masthead" bar across the top of the site
    ===================================================== */
 
-   .logo .Inicio{
-    margin: 0;
-      list-style: none;
-    position:absolute;
-    top:-7.2px;
-    left:-0.2px;
-  }
-  .logo .Inicio li{
-      display: block;
-      border-left: 1px solid #ffffff;
-      
-  }
-  .logo .Inicio li div{
-      height:0px;
-    width:0px;
-  }
-  .logo .Inicio li div a{
-        color: #0072ff;
-      background-color: white;
-      font-weight: 400;
-    font-weight:bold;
-      z-index: 1;
-    min-width: 28px;
-      height:2px;
-      border: 1px solid blue;
-    
-    
-  }
-   .logo .Inicio .Inicio .Inicio a:hover {
-    color: rgb(255 255 255 / 70%);
-    background-color: #0164df;
-  }
-     .account-masthead {
-      background: #ffffff;
-      height:0px;
-       padding-bottom:0px;
-       
-  }
-  .account-masthead  .container {
-      padding-right: 0px;
-      padding-left: 0px;
-      margin-right: 0px;
-  }
-  .account-masthead .account {
-      float: right;
-  }
-  /*the image logo*/
-  .logo  img{
-      max-width: 40vw;
-      max-height: 256vh;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      padding-bottom:2px;
-  }
-  .section.site-search.simple-input input::placeholder{
-    background:#DEDEDF;
-    color:#000;
-    font-size:18px;
-    
-  }
-  .section.site-search.simple-input input{
-    background:#DEDEDF;
-    
-  }
-  .section.site-search.simple-input .field  {
-    position:absolute;
-    left: 37vw;
-    top: 16vw;
-    text-align: center;
-    padding-top: 2px;
-    width:418.67px;
-    z-index:1;
-  }
-  body .logo{
-    padding-top:400px;
+   .account-masthead {
     background: #ffffff;
-  }
-  
-  .section.site-search.simple-input .field .btn-search {
-    color:#000;
-    
-  }
-  
-  /* The "bubble" containing the number of new notifications. */
-  .account-masthead .account .notifications a span {
-    background-color: black;
-  }
-  /* The text and icons in the user account info. */
-  .account-masthead .account ul li a {
-    color: #0164df;
-    background-color:white;
-    font-weight: 600;
-     z-index: 1;
-    position: relative;
-    
-    border: 1px solid blue; /* Altere "blue" para a cor desejada */
-  
-  }
-  .account-masthead .account ul li a.sub {
-      font-weight: 600;
-  }
-  .account-masthead .account ul li {
-      display: block;
-      border-left: 1px solid #ffffff;
-  }
-  /* The user account info text and icons, when the user's pointer is hovering
-     over them. */
-  .account-masthead .account ul li a:hover {
-    color: rgb(255 255 255 / 70%);
-    background-color: #0164df;
-  }
-  .homepage [role=main] {
-      padding: 0px 0;
-  }
-  
-  
-  /* ========================================================================
-     The main masthead bar that contains the site logo, nav links, and search
-     ======================================================================== */
-  
-  .masthead {
-    margin:0px;
-    background-color: #16510C;
-  }
-  /* The "navigation pills" in the masthead (the links to Datasets,
-     Organizations, etc) when the user's pointer hovers over them. */
-  .masthead .navigation .nav-pills li a:hover {
-    background-color: rgb(48, 48, 48);
-    color: white;
-  }
-  /* The "active" navigation pill (for example, when you're on the /dataset page
-     the "Datasets" link is active). */
-  .masthead .navigation .nav-pills li.active a {
-    background-color: rgb(74, 74, 74);
-  }
-  /* The "box shadow" effect that appears around the search box when it
-     has the keyboard cursor's focus. */
-  .masthead input[type="text"]:focus {
-    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-  }
-  
-  
-  /* ===========================================
-     The content in the middle of the front page
-     =========================================== */
-  
-  /* Remove the "box shadow" effect around various boxes on the page. */
-  .box {
-    box-shadow: none;
-  }
-  /*Title in the promoted img*/
-  h1.page-heading{
-    color: rgb(0, 0, 0);
-  }
-  /*The text above the title*/
-  p{
-    color:rgb(0, 0, 0);
-  }
-  /* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
-     boxes. */
-  .hero .box {
-    border: none;
-  }
-  /* Change the colors of the "Search Your Data" box. */
-  .homepage .module-search .module-content {
-    color: rgb(255, 255, 255);
-    background-color: #26316e;
-  }
-  /* Change the background color of the "Popular Tags" box. */
-  .homepage .module-search .tags {
-    background-color: rgb(10 17 56);
-  }
-  /* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
-     and "Search Your Data" boxes line up. */
-  .module-content:last-child {
-    padding-bottom: 0px;
-  }
-  .homepage .module-search {
-    padding: 0px;
-  }
-  /* Add a border line between the top and bottom halves of the front page. */
-  .homepage [role="main"] {
-    border-top: 0px solid rgb(204, 204, 204);
-  }
-  
-  /*the background before the final template, where is teh groups, organization, etc */
-  
-  .homepage.layout-1 [role="main"] .main {
-    background: white;
-  }
-  
-  .homepage.layout-1 [role="main"] .main.hero {
-    background-color: #dbdbdb
-  }
-  /* ====================================
-     The footer at the bottom of the site
-     ==================================== */
-  
-  .homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 {
-    padding-right:15px;
-    padding-left:15px;
-  }
-  .homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 .module-content.box{
-    padding-right:15px;
-    padding-left:15px;
-  }
-  .homepage.layout-1 [role="main"] .main.hero .row.row1 {
-    height:356px;
-    width:1170px;
-    
-  }
-  
-  .site-footer .container{
-    margin:0px 0px 0px 0px;
-    width:auto;
-  }
-  .site-footer .Version{
-    width:100%;
-    text-align:center;
-    position:absolute;
-  }
-  .site-footer .list-unstyled{
-    position:relative;
-  }
-  .site-footer  a{
-    text-align:right;
+    height:0px;
+     padding-bottom:0px;
+     
+}
+.account-masthead  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+}
+.account-masthead .account {
+    float: right;
+}
+/*the image logo*/
+.logo  img{
+    max-width: 40vw;
+    max-height: 256vh;
     position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    padding-bottom:2px;
+}
+.section.site-search.simple-input input::placeholder{
+  background:#DEDEDF;
+  color:#000;
+  font-size:18px;
+  
+}
+.section.site-search.simple-input input{
+  background:#DEDEDF;
+  
+}
+.section.site-search.simple-input .field  {
+  position:absolute;
+  left: 37vw;
+  top: 16vw;
+  text-align: center;
+  padding-top: 2px;
+  width:418.67px;
+  z-index:1;
+}
+body .logo{
+  padding-top:400px;
+  background: #ffffff;
+}
+
+.section.site-search.simple-input .field .btn-search {
+  color:#000;
+  
+}
+
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span {
+  background-color: black;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+  color: #0164df;
+  background-color:white;
+  font-weight: 600;
+   z-index: 2;
+  position: relative;
+  
+  border: 1px solid blue; /* Altere "blue" para a cor desejada */
+
+}
+.account-masthead .account ul li a.sub {
+    font-weight: 600;
+}
+.account-masthead .account ul li {
+    display: block;
+    border-left: 1px solid #ffffff;
+}
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+  color: rgb(255 255 255 / 70%);
+  background-color: #0164df;
+}
+.homepage [role=main] {
+    padding: 0px 0;
+}
+
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+  margin:0px;
+  background-color: #16510C;
+}
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+/* The "active" navigation pill (for example, when you're on the /dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+  background-color: rgb(74, 74, 74);
+}
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+  box-shadow: none;
+}
+/*Title in the promoted img*/
+h1.page-heading{
+  color: rgb(0, 0, 0);
+}
+/*The text above the title*/
+p{
+  color:rgb(0, 0, 0);
+}
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+  border: none;
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  color: rgb(255, 255, 255);
+  background-color: #26316e;
+}
+/* Change the background color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+  background-color: rgb(10 17 56);
+}
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+  padding-bottom: 0px;
+}
+.homepage .module-search {
+  padding: 0px;
+}
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+  border-top: 0px solid rgb(204, 204, 204);
+}
+
+/*the background before the final template, where is teh groups, organization, etc */
+
+.homepage.layout-1 [role="main"] .main {
+  background: white;
+}
+
+.homepage.layout-1 [role="main"] .main.hero {
+  background-color: #dbdbdb
+}
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 {
+  padding-right:15px;
+  padding-left:15px;
+}
+.homepage.layout-1 [role="main"] .main.hero .row.row1 .col-md-6.col1 .module-content.box{
+  padding-right:15px;
+  padding-left:15px;
+}
+.homepage.layout-1 [role="main"] .main.hero .row.row1 {
+  height:356px;
+  width:1170px;
+  
+}
+
+.site-footer .container{
+  margin:0px 0px 0px 0px;
+  width:auto;
+}
+.site-footer .Version{
+  width:100%;
+  text-align:center;
+  position:absolute;
+}
+.site-footer .list-unstyled{
+  position:relative;
+}
+.site-footer  a{
+  text-align:right;
+  position: absolute;
+  margin-top:20px;
+  height:20px;
+  width:100%;
+  z-index: 1; /* Certifique-se de que o z-index seja maior que elementos que podem sobrepor */
+
+}
+.site-footer .footerimg{
+  width:auto;
+}
+.site-footer,
+body {
+  background-color: #F6F6F6;
+  background: #ffffff;
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgb(0 0 0);
+}
+/* The link texts in the footer. */
+.site-footer .col-md-8{
+  max-width:600px;
+  padding:0px;
+  text-align:right;
+  position:relative;
+}
+.site-footer .col-md-4{
+  max-width:600px;
+  padding:0px;
+  position:absolute;
+}
+.site-footer .col-md-8 .list-unstyled a {
+  color: rgb(0 0 0);
+  font-size:12px;
+}
+
+
+
+/*the optios buttons(datasets, about, etc)*/
+.masthead .navigation ul.nav-pills {
+    margin-bottom: 11px;
+    margin-top:16px;
+    font-size: 17px;
+  
+    
+}
+.masthead .navigation ul.nav-pills li a {
+  color: #ffffff;
+   border: 1px solid white
+  
+}
+.masthead .navigation ul.nav-pills li a:hover {
+  color: #339144;
+  background:white;
+  border: 1px solid #339144;
+  
+}
+.masthead .navigation .nav-pills li.active a {
+    background-color: rgb(255 255 255);
+  color: #339144;
+   border: 1px solid #339144;
+}
+/*search on the top*/
+.masthead .site-search input {
+    width: 200px;
     margin-top:20px;
-    height:20px;
-    width:100%;
-    z-index: 1; /* Certifique-se de que o z-index seja maior que elementos que podem sobrepor */
+    padding: 5px 10px;
+}
+
+.main{
+  background:#16510C;
+  padding-top: 0px;
+}
+.imgcampus{
+  position:relative;
+  text-align: center;
+  background-color: #DEDEDF;
   
-  }
-  .site-footer .footerimg{
-    width:auto;
-  }
-  .site-footer,
-  body {
-    background-color: #F6F6F6;
-    background: #ffffff;
-  }
-  /* The text in the footer. */
-  .site-footer,
-  .site-footer label,
-  .site-footer small {
-    color: rgb(0 0 0);
-  }
-  /* The link texts in the footer. */
-  .site-footer .col-md-8{
-    max-width:600px;
-    padding:0px;
-    text-align:right;
-    position:relative;
-  }
-  .site-footer .col-md-4{
-    max-width:600px;
-    padding:0px;
-    position:absolute;
-  }
-  .site-footer .col-md-8 .list-unstyled a {
-    color: rgb(0 0 0);
-    font-size:12px;
-  }
+}
+[role=main], .main {
+  position:relative;
+  padding-bottom:100px;
+}
+.imgcampus img{
+  max-width: 60vw; /* Define o tamanho mínimo de largura da imagem */
+  max-height: 40vw;
   
-  
-  
-  /*the optios buttons(datasets, about, etc)*/
-  .masthead .navigation ul.nav-pills {
-      margin-bottom: 11px;
-      margin-top:16px;
-      font-size: 17px;
-    
-      
-  }
-  .masthead .navigation ul.nav-pills li a {
-    color: #ffffff;
-     border: 1px solid white
-    
-  }
-  .masthead .navigation ul.nav-pills li a:hover {
-    color: #339144;
-    background:white;
-    border: 1px solid #339144;
-    
-  }
-  .masthead .navigation .nav-pills li.active a {
-      background-color: rgb(255 255 255);
-    color: #339144;
-     border: 1px solid #339144;
-  }
-  /*search on the top*/
-  .masthead .site-search input {
-      width: 200px;
-      margin-top:20px;
-      padding: 5px 10px;
-  }
-  
-  .main{
-    background:#16510C;
-    padding-top: 0px;
-  }
-  .imgcampus{
-    position:relative;
-    text-align: center;
-    background-color: #DEDEDF;
-    
-  }
-  [role=main], .main {
-    position:relative;
-    padding-bottom:100px;
-  }
-  .imgcampus img{
-    max-width: 60vw; /* Define o tamanho mínimo de largura da imagem */
-    max-height: 40vw;
-    
-  }
-  .imgcampus p{
-   color:#16510C;
-  font-weight: bold; /* Aplica negrito ao texto */
-  font-size: 2.1vw;
-  }
-  
-  .row.wrapper.no-nav p{
-    font-size: 1.7vw;
-    text-align: justify;
-  }
-  .row.wrapper.no-nav h1{
-    text-align: center;
-    font-size:2.3vw;
-    color:#16510C;
-  }
-  .module-content{
-    padding:30px 450px 0px 450px;
-  }
+}
+.imgcampus p{
+ color:#16510C;
+font-weight: bold; /* Aplica negrito ao texto */
+font-size: 2.1vw;
+}
+
+.row.wrapper.no-nav p{
+  font-size: 1.7vw;
+  text-align: justify;
+}
+.row.wrapper.no-nav h1{
+  text-align: center;
+  font-size:2.3vw;
+  color:#16510C;
+}
+.module-content{
+  padding:30px 450px 0px 450px;
+}
+.main .row.wrapper:before{
+  width:0%;
+}
