@@ -10,6 +10,18 @@
         <a class="logo" href="{{ h.url('home.index') }}">
             <img src="/logo.png" alt="OBEMI" title="OBEMI" />
         </a>
+        {% block header_initial_page %}
+          <ul class="Inicio">
+            <li class="Inicio">
+              <div class="Inicio">
+                 <a href="{{ h.url_for('home.index') }}" title="Inicio">
+                 <i class="fa fa-initial" aria-hidden="true"></i>
+                   <span class="text">{{ _('Inicio') }}</span>
+                 </a>
+              </div>
+            </li> 
+           </ul>
+{% endblock %}
         {% block header_site_search2 %}
             {# Conteúdo do bloco header_site_search2, caso queira adicionar algo específico aqui #}
             <div class="database">
@@ -21,12 +33,12 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/organization/') or request.url.endswith('organizations/') %}
+            {% if request.url.endswith('/organization/') or request.url.endswith('organizations/') or request.url.endswith('dataset') %}
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
                     <div class="field">
                         <label for="field-organization-search">{{ _('Search Organizations') }}</label>
-                        <input id="field-organization-search" type="text" class="form-control" name="q" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
+                        <input id="field-organization-search" type="text" class="form-control" name="p" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
                         <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
@@ -41,18 +53,7 @@
 {{ super() }}
 
 {% endblock %}
-{% block header_initial_page %}
-<ul class="Inicio">
-<li class="Inicio">
-    <div class="Inicio">
-    <a href="{{ h.url_for('home.index') }}" title="Inicio">
-      <i class="fa fa-initial" aria-hidden="true"></i>
-      <span class="text">{{ _('Inicio') }}</span>
-    </a>
-    </div>
-  </li> 
-</ul>
-{% endblock %}
+
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
 {% endblock %}
