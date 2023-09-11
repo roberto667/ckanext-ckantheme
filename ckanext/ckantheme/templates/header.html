@@ -40,6 +40,7 @@
 {% block header_account_logged %}
 {{ super() }}
 {% block header_initial_page %}
+<ul class="Inicio">
 <li class="Inicio">
     <div class="Inicio">
     <a href="{{ h.url_for('home.index') }}" title="Inicio">
@@ -47,12 +48,11 @@
       <span class="text">{{ _('Inicio') }}</span>
     </a>
     </div>
-  </li>
+  </li> 
+</ul>
 {% endblock %}
 {% endblock %}
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
 {% endblock %}
-{% block header_site_navigation_tabs %}
 
-{% endblock %}
