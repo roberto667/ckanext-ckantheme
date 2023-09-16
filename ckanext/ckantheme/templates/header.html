@@ -24,6 +24,7 @@
 {% endblock %}
         {% block header_site_search2 %}
             {# Conteúdo do bloco header_site_search2, caso queira adicionar algo específico aqui #}
+            <div class="serch">
             <div class="database">
                 <form class="section site-search simple-input" action="{% url_for 'dataset.search' %}" method="get">
                     <div class="field">
@@ -42,7 +43,8 @@
                         <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
                     </div>
                 </form>
-            </div>      
+            </div>
+        </div>      
             {% endif %}
      
         {% endblock %}
