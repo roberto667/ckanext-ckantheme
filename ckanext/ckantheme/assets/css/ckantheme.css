@@ -2,6 +2,20 @@
    The "account masthead" bar across the top of the site
  
 ===================================================== */
+h1.page-heading{
+  text-align:center;
+}
+/* =====================================================
+   The "account masthead" bar across the top of the site
+ 
+===================================================== */
+
+.descini{
+  position: relative;
+    padding-bottom: 100px;
+      padding: 30px 450px 100px 450px;
+  font-size:18px;
+}
 .logo .Inicio{
   position:absolute;
   padding:0px;
@@ -203,7 +217,7 @@ p{
 .homepage.layout-1 [role="main"] .main.hero .row.row1 {
   height:356px;
   width:1170px;
-  
+  padding-top:10px;
 }
 
 .site-footer .container{
