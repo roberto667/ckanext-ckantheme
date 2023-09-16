@@ -1,7 +1,27 @@
 /* =====================================================
    The "account masthead" bar across the top of the site
-   ===================================================== */
-
+ 
+===================================================== */
+.logo .Inicio{
+  position:absolute;
+  padding:0px;
+  top:-6%;
+  margin: 0px;
+    list-style: none;
+}
+.logo .Inicio li{
+  display: block;
+    border-left: 1px solid #ffffff;
+}
+.logo .Inicio li a{
+   color: #0164df;
+    background-color: white;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    border: 1px solid blue;
+  
+}
    .account-masthead {
     background: #ffffff;
     height:0px;
