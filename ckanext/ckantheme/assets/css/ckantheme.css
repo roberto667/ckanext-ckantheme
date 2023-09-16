@@ -345,3 +345,6 @@ font-size: 2.1vw;
 .main .row.wrapper:before{
   width:0%;
 }
+.site-footer a {
+  color: #000000;
+}
