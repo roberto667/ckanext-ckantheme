@@ -228,7 +228,6 @@ p{
 }
 .site-footer .Version{
   width:100%;
-  font-weight:bold;
   text-align:center;
   position:absolute;
 }
@@ -343,12 +342,20 @@ font-size: 2.1vw;
   color:#16510C;
 }
 .module-content{
-  padding:30px 450px 0px 450px;
+  padding:0px;
 }
 .main .row.wrapper:before{
   width:0%;
 }
 .site-footer a {
   color: #000000;
-  font-weight:bold;
+}
+.primary.col-sm-9.col-xs-12 .module .module-content .page_primary_action{
+  padding: 30px 450px 0px 450px;
+}
+.descini{
+  padding:0px;
+}
+.main .primary.col-sm-9.col-xs-12{
+  width:auto;
 }
