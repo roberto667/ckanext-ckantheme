@@ -163,6 +163,8 @@ body .logo{
 /*Title in the promoted img*/
 h1.page-heading{
   color: #16510C;
+  font-size:24px;
+  
 }
 /*The text above the title*/
 p{
@@ -351,11 +353,23 @@ font-size: 2.1vw;
   color: #000000;
 }
 .primary.col-sm-9.col-xs-12 .module .module-content .page_primary_action{
-  padding: 30px 450px 0px 450px;
+  padding: 30px 190px 200px 190px;
+  text-align:justify;
+  
 }
 .descini{
   padding:0px;
 }
+.descini p{
+  font-size:20px;
+}
 .main .primary.col-sm-9.col-xs-12{
   width:auto;
+}
+[role=main], .main .module-content p{
+  font-size:20px;
+  
+}
+[role=main], .main .module-content {
+  padding: 30px 140px 10px 140px;
 }
