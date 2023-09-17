@@ -24,16 +24,18 @@
     de construção, de produção, de sistematização e de democratização do saber.
  </p>
 </div>
+{% block primary_content_inner %}
 
 {% endblock %}
-
-{% block secondary_content %}
+{% endblock %}
 {% if h.check_access('organization_create') %}
     {% link_for _('Add Organization'), named_route=group_type+'.new', class_='btn btn-primary', icon='plus-square' %}
     {% block primary_content_inner %}
     {{ super() }}
     {% endblock %}
 {% endif %}
+{% block secondary_content %}
+
 {% endblock %}
 
 
