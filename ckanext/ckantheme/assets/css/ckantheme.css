@@ -51,7 +51,7 @@ h1.page-heading{
     float: right;
 }
 /*the image logo*/
-.logo  img{
+a.logo  img{
     max-width: 40vw;
     max-height: 256vh;
     position: absolute;
