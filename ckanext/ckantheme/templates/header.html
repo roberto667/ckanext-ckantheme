@@ -1,8 +1,6 @@
 {% ckan_extends %}
 
-{% block header_logo %}
-    {# Conteúdo do bloco header_logo, caso queira adicionar algo específico aqui #}
-{% endblock %}
+
 
 {% block header_account %}
     {{ super() }}
@@ -35,6 +33,12 @@
                 </form>
             </div>  
             {% if request.url.endswith('/organization/') or request.url.endswith('organizations/') or request.url.endswith('dataset') %}
+            {% block header_logo %}
+                {% block header_title %}
+                    <h1 class="Tittletype">1 - Buscar dados por campus</h1>
+                {% endblock %}
+            {% endblock %}
+
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
                     <div class="field">
