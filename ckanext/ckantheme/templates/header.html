@@ -51,12 +51,6 @@
         
     </div>
 {% endblock %}
-{% block header_account_logged %}
-{{ super() }}
-{% if request.url.endswith('/organization/') or request.url.endswith('organizations/') or request.url.endswith('dataset') %}
-
-{% endif %}
-{% endblock %}
 
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
