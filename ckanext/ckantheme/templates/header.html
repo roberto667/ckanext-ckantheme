@@ -58,14 +58,12 @@
 {% endblock %}
            
 {% block header_site_navigation %}
-{% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}     
-         {% block header_title %}
-             <h1 class="Tittletype">2 - Selecione um curso</h1>
-        {% endblock %}          
-{% elif request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}     
-         {% block header_title %}
-             <h1 class="Tittletype">1 - Buscar dados por campus</h1>
-        {% endblock %}          
-{% endif %}
+{% block header_title %}
+  {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}          
+      <h1 class="Tittletype">2 - Selecione um curso</h1>               
+  {% elif request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}     
+      <h1 class="Tittletype">1 - Buscar dados por campus</h1>         
+  {% endif %}
+{% endblock %}  
         {{ super() }}
 {% endblock %}
