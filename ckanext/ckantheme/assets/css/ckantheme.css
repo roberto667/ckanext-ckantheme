@@ -123,7 +123,12 @@ body .logo{
 .homepage [role=main] {
     padding: 0px 0;
 }
-
+.collapse.navbar-collapse{
+  width:100%;
+}
+.Tittletype{
+  text-align:center;
+}
 
 /* ========================================================================
    The main masthead bar that contains the site logo, nav links, and search
