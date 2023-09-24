@@ -1,7 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-    var dropdownButton = document.querySelector(".navbar-toggle");
-    var dropdownContent = document.getElementById("dropdown-content");
+    var dropdownButton = document.querySelector(".organization button");
+    var dropdownContent = document.getElementById("groupsdown");
 
     dropdownButton.addEventListener("click", function () {
         if (dropdownContent.classList.contains("show")) {
@@ -13,9 +12,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
-
-
-
-

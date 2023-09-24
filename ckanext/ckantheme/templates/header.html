@@ -35,10 +35,10 @@
             {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}                
 
             <div class="organization">
-                <button type="button" data-target="#dropdown-content" data-toggle="collapse"  aria-label="expand or collapse" aria-expanded="true">
+                <button type="button" data-target="#groupsdown" data-toggle="collapse"  aria-label="expand or collapse" aria-expanded="true">
                     <span class="fa fa-arrow-down"></span>
                 </button>
-                <div class="groupsdown">
+                <div id="groupsdown" class="groupsdown collapse">
                     {% block groups_list %}
                         {% if page.items or request.params %}
                             {% if page.items %}
