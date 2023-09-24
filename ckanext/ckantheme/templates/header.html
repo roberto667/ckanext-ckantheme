@@ -48,7 +48,7 @@
                     {% endblock %}
                 </div>
             </div>
-            </div>      
+            </div>
             {% endif %}
      
         {% endblock %}
@@ -72,3 +72,8 @@
 {% endblock %}  
         {{ super() }}
 {% endblock %}
+
+{%- block scripts %}
+  {{ super() }}
+  {% asset 'js/ckantheme' %}
+{% endblock -%}
