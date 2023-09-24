@@ -56,11 +56,13 @@
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
 {% endblock %}
-{% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}                
+           
 {% block header_site_navigation %}
 {{ super() }}
+{% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}     
          {% block header_title %}
              <h1 class="Tittletype">1 - Buscar dados por campus</h1>
         {% endblock %}          
+        {% endif %}
+
 {% endblock %}
-{% endif %}
