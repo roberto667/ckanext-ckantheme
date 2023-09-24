@@ -32,7 +32,7 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/organization/') or request.url.endswith('organizations/') or request.url.endswith('dataset') %}
+            {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}
             {% block header_site_navigation %}
             {{ super() }}
                 {% block header_title %}
