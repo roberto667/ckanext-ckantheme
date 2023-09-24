@@ -58,11 +58,11 @@
 {% endblock %}
            
 {% block header_site_navigation %}
-{{ super() }}
+
 {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}     
          {% block header_title %}
              <h1 class="Tittletype">1 - Buscar dados por campus</h1>
         {% endblock %}          
         {% endif %}
-
+        {{ super() }}
 {% endblock %}
