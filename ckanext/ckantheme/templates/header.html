@@ -13,7 +13,7 @@
             <li class="Inicio">
               <div class="Inicio">
                  <a href="{{ h.url_for('home.index') }}" title="Inicio">
-                 <i class="fa fa-initial" aria-hidden="true"></i>
+                   <span class="fa fa-home"></span>
                    <span class="text">{{ _('Inicio') }}</span>
                  </a>
               </div>
@@ -35,13 +35,18 @@
             {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}                
 
             <div class="organization">
-                <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
-                    <div class="field">
-                        <label for="field-organization-search">{{ _('Search Organizations') }}</label>
-                        <input id="field-organization-search" type="text" class="form-control" name="p" placeholder="{{ _('Search organizations...') }}" aria-label="{{ _('Search organizations') }}"/>
-                        <button class="btn-search" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button>
-                    </div>
-                </form>
+                <button type="button" data-target="#dropdown-content" data-toggle="collapse"  aria-label="expand or collapse" aria-expanded="true">
+                    <span class="fa fa-arrow-down"></span>
+                </button>
+                <div class="groupsdown">
+                    {% block groups_list %}
+                        {% if page.items or request.params %}
+                            {% if page.items %}
+                                {% snippet "group/snippets/group_list.html", groups=page.items %}
+                            {% endif %}
+                        {% endif %}
+                    {% endblock %}
+                </div>
             </div>
             </div>      
             {% endif %}
