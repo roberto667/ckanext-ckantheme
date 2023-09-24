@@ -32,11 +32,7 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}
-            
-                {% block header_title %}
-                    <h1 class="Tittletype">1 - Buscar dados por campus</h1>
-                {% endblock %}                          
+            {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}                
 
             <div class="organization">
                 <form class="section site-search simple-input" action="{% url_for 'organization.search' %}" method="get">
@@ -59,4 +55,10 @@
 {% endblock %}
 {% block header_site_search %}
     {# Conteúdo do bloco header_site_search, caso queira adicionar algo específico aqui #}
+{% endblock %}
+{% block header_site_navigation %}
+{{ super() }}
+         {% block header_title %}
+             <h1 class="Tittletype">1 - Buscar dados por campus</h1>
+        {% endblock %}          
 {% endblock %}
