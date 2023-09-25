@@ -47,13 +47,13 @@ h1.page-heading{
     border-left: 1px solid #ffffff;
 }
 .logo .Inicio li a{
-   color: #0164df;
-    background-color: white;
-    font-weight: 600;
-    z-index: 2;
-    position: relative;
-    border: 1px solid blue;
-  
+   color: #000000;
+   background-color: white;
+   font-weight: 100;
+  font-size:30px;
+   z-index: 2;
+   position: relative;
+   /* border: 1px solid blue; */
 }
    .account-masthead {
     background: #ffffff;
@@ -112,14 +112,12 @@ body .logo{
 }
 /* The text and icons in the user account info. */
 .account-masthead .account ul li a {
-  color: #0164df;
+  color: #000000;
   background-color:white;
   font-weight: 600;
-   z-index: 2;
+  z-index: 2;
   position: relative;
-  
-  border: 1px solid blue; /* Altere "blue" para a cor desejada */
-
+  border: 1px solid black; /* Altere "blue" para a cor desejada */
 }
 .account-masthead .account ul li a.sub {
     font-weight: 600;
