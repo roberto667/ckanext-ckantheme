@@ -1,6 +1,6 @@
 ckantheme-js:
-   filter: rjsmin
    output: ckanext-ckantheme/%(version)s-ckantheme.js
+   filter: rjsmin   
    contents:
      - js/ckantheme.js
 #   extra:
