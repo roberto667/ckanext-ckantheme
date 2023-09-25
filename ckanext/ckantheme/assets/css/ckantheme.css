@@ -6,9 +6,20 @@ h1.page-heading{
   text-align:center;
 
 }
+.serch {
+    display: flex;
+    text-align: center; /* Alinha verticalmente ao centro */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.database, .organization {
+    margin-right: 10px; /* Adiciona margem entre os elementos */
+}
+
 .serch .organization{
   width:auto;
-  text-align:right;
   position:relative;
 }
 /* =====================================================
@@ -80,16 +91,13 @@ a.logo  img{
   
 }
 .section.site-search.simple-input .field  {
-  position:absolute;
-  left: 37vw;
-  top: 16vw;
-  text-align: center;
+  position: relative;
   padding-top: 2px;
   width:418.67px;
   z-index:1;
 }
 body .logo{
-  padding-top:400px;
+  padding-top: 317px;
   background: #ffffff;
 }
 
