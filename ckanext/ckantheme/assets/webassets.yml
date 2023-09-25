@@ -1,8 +1,8 @@
-ckantheme-js:
-   output: ckanext-ckantheme/%(version)s-ckantheme.js
-   filter: rjsmin   
-   contents:
-     - js/ckantheme.js
+#ckantheme-js:
+#   filter: rjsmin
+#   output: ckanext-ckantheme/%(version)s-ckantheme.js
+#   contents:
+#     - js/ckantheme.js
 #   extra:
 #     preload:
 #       - base/main
