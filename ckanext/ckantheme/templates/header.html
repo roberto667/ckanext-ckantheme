@@ -42,7 +42,7 @@
                     {% block groups_list %}
                         {% if page.items or request.params %}
                             {% if page.items %}
-                                {% snippet "group/snippets/group_list.html", groups=page.items %}
+                                {% snippet "organization/snippets/organization_list.html", groups=page.items %}
                             {% endif %}
                         {% endif %}
                     {% endblock %}
