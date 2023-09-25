@@ -32,7 +32,8 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/group/') or request.url.endswith('group/') or request.url.endswith('dataset') %}                
+            {% if request.url.endswith('/group/') or request.url.endswith('group/') or 
+            request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
 
             <div class="organization">
                 <button type="button" data-target="#groupsdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
