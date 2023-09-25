@@ -4,6 +4,12 @@
 ===================================================== */
 h1.page-heading{
   text-align:center;
+
+}
+.serch .organization{
+  width:auto;
+  text-align:right;
+  position:relative;
 }
 /* =====================================================
    The "account masthead" bar across the top of the site
