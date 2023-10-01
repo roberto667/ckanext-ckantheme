@@ -40,6 +40,40 @@
                     <span class="fa fa-arrow-down"></span>
                 </button>
                 <div id="groupsdown" class="groupsdown collapse">
+                    {% block organizations_list %}
+                        {% if page.items or request.params %}
+                            {% if page.items %}
+                                {% snippet "organization/snippets/organization_list.html", organizations=page.items %}
+                            {% endif %}
+                         {% endif %}
+                    {% endblock %}
+                </div>
+            </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var dropdownButton = document.querySelector(".organization button");
+                    var dropdownContent = document.getElementById("groupsdown");
+
+                    dropdownButton.addEventListener("click", function () {
+                        if (dropdownContent.classList.contains("show")) {
+                            dropdownContent.classList.remove("show");
+                            dropdownButton.setAttribute("aria-expanded", "false");
+                        } else {
+                            dropdownContent.classList.add("show");
+                            dropdownButton.setAttribute("aria-expanded", "true");
+                        }
+                    });
+                });
+            </script>
+            {% endif %}
+            {% if request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
+
+            <div class="group">
+                <button type="button" data-target="#groupsdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
+                    <span class="fa fa-arrow-down"></span>
+                </button>
+                <div id="groupsdown" class="groupsdown collapse">
                     {% block groups_list %}
                         {% if page.items or request.params %}
                             {% if page.items %}
@@ -52,7 +86,7 @@
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    var dropdownButton = document.querySelector(".organization button");
+                    var dropdownButton = document.querySelector(".group button");
                     var dropdownContent = document.getElementById("groupsdown");
 
                     dropdownButton.addEventListener("click", function () {
