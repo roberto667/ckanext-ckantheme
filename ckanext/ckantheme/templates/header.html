@@ -35,11 +35,12 @@
             {% if request.url.endswith('/group/') or request.url.endswith('group/') or 
             request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
 
-            <div class="organization">
-                <button type="button" data-target="#groupsdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
+            <div class="Instituicao">
+                <button type="button" data-target="#inttuisdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
+                    <span class="text">{{ _('Instituições') }}</span>
                     <span class="fa fa-arrow-down"></span>
                 </button>
-                <div id="groupsdown" class="groupsdown collapse">
+                <div id="instituidown" class="instituisdown collapse">
                     {% block organizations_list %}
                         {% if page.items or request.params %}
                             {% if page.items %}
@@ -51,8 +52,8 @@
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    var dropdownButton = document.querySelector(".organization button");
-                    var dropdownContent = document.getElementById("groupsdown");
+                    var dropdownButton = document.querySelector(".Instituicao button");
+                    var dropdownContent = document.getElementById("inttuisdown");
 
                     dropdownButton.addEventListener("click", function () {
                         if (dropdownContent.classList.contains("show")) {
@@ -68,11 +69,12 @@
             {% endif %}
             {% if request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
 
-            <div class="group">
-                <button type="button" data-target="#groupsdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
+            <div class="Curso">
+                <button type="button" data-target="#cursodown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
+                    <span class="text">{{ _('Cursos') }}</span>
                     <span class="fa fa-arrow-down"></span>
                 </button>
-                <div id="groupsdown" class="groupsdown collapse">
+                <div id="cursodown" class="cursodown collapse">
                     {% block groups_list %}
                         {% if page.items or request.params %}
                             {% if page.items %}
@@ -84,8 +86,8 @@
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    var dropdownButton = document.querySelector(".group button");
-                    var dropdownContent = document.getElementById("groupsdown");
+                    var dropdownButton = document.querySelector(".Curso button");
+                    var dropdownContent = document.getElementById("cursodown");
 
                     dropdownButton.addEventListener("click", function () {
                         if (dropdownContent.classList.contains("show")) {
