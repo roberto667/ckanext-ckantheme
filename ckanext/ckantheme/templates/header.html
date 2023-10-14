@@ -32,8 +32,8 @@
                     </div>
                 </form>
             </div>  
-            {% if '/group/' in request.url or 'group/' in request.url or 
-            '/dataset/' in request.url or 'dataset/' in request.url %}                
+            {% if request.url.endswith('/group/') or request.url.endswith('group/') or 
+            request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                 
 
             <div class="Instituicao">
                 <button type="button" data-target="#inttuisdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
@@ -67,7 +67,7 @@
                 });
             </script>
             {% endif %}
-            {% if '/dataset/' in request.url or 'dataset/' in request.url %}                
+            {% if request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
 
             <div class="Curso">
                 <button type="button" data-target="#cursodown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
@@ -100,6 +100,13 @@
                     });
                 });
             </script>
+            {% endif %}
+            {% if c.userobj.sysadmin %}
+
+            {% else %}
+            {% if request.url.endswith('/dashboard/') or request.url.endswith('dashboard/') or 
+            request.url.endswith('/') %}   
+            
             {% endif %}
      
          {% endblock %}
