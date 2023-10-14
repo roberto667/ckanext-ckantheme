@@ -32,8 +32,8 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/group/') or request.url.endswith('group/') or 
-            request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
+            {% if '/group/' in request.url or 'group/' in request.url or 
+            '/dataset/' in request.url or 'dataset/' in request.url %}                
 
             <div class="Instituicao">
                 <button type="button" data-target="#inttuisdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
@@ -67,7 +67,7 @@
                 });
             </script>
             {% endif %}
-            {% if request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
+            {% if '/dataset/' in request.url or 'dataset/' in request.url %}                
 
             <div class="Curso">
                 <button type="button" data-target="#cursodown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
