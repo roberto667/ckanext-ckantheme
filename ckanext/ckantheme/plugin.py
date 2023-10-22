@@ -4,6 +4,7 @@ import ckan.plugins.toolkit as toolkit
 
 class CkanthemePlugin(p.SingletonPlugin):
     p.implements(p.IConfigurer, inherit=True)
+    p.implements(p.ITemplateHelpers)
 
     # IConfigurer
 
@@ -21,3 +22,9 @@ class CkanthemePlugin(p.SingletonPlugin):
             'ckantheme')
         p.toolkit.add_resource('assets', 'ckantheme')
         p.toolkit.add_public_directory(config, 'assets/')
+
+    def get_helpers(self):
+        from ckanext.ckantheme import helpers as ckantheme_helpers
+        return{
+            'most_popular_groups': ckantheme_helpers.most_popular_groups
+        }

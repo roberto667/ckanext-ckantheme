@@ -76,11 +76,13 @@
                 </button>
                 <div id="cursodown" class="cursodown collapse">
                     {% block groups_list %}
-                        {% if page.items or request.params %}
-                            {% if page.items %}
-                                {% snippet "organization/snippets/organization_list.html", groups=page.items %}
-                            {% endif %}
-                        {% endif %}
+                        {% set groups = h.most_popular_groups() %}
+
+                        {% for group in groups %}
+                            <div class="box span3">
+                                {% snippet 'snippets/group_item.html', group=group, truncate=50, truncate_title=35 %}
+                            </div>
+                        {% endfor %}
                     {% endblock %}
                 </div>
             </div>
