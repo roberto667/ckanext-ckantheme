@@ -6,6 +6,9 @@ h1.page-heading{
   text-align:center;
 
 }
+.media-heading{
+  color:black;
+}
 .serch {
     display: flex;
     text-align: center; /* Alinha verticalmente ao centro */
