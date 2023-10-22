@@ -14,6 +14,10 @@ h1.page-heading{
     align-items: center;
 }
 
+.serch .Curso{
+  margin-left:10px;
+}
+
 .database, .organization {
     margin-right: 10px; /* Adiciona margem entre os elementos */
 }
