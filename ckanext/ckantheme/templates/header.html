@@ -57,8 +57,11 @@
 {% endblock %}
 
 {% block header_site_navigation_tabs %}
-{{ super() }}
 {% block organizations_list %}
+{% if c.userobj.sysadmin %} 
+  
+{% else %}
+
 <div class="orglist">
     {% if request.url.endswith('/organization/') or request.url.endswith('organization/') %}    
     {% if page.items or request.params %}
@@ -68,6 +71,7 @@
     {% endif %}
     {% endif %}
 </div>
+{% endif %}
 {% endblock %}
 {% endblock %}
 
