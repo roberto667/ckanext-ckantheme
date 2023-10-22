@@ -32,77 +32,7 @@
                     </div>
                 </form>
             </div>  
-            {% if request.url.endswith('/group/') or request.url.endswith('group/') or 
-            request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                 
-
-            <div class="Instituicao">
-                <button type="button" data-target="#inttuisdown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
-                    <span class="text">{{ _('Instituições') }}</span>
-                    <span class="fa fa-arrow-down"></span>
-                </button>
-                <div id="instituidown" class="instituisdown collapse">
-                    {% block organizations_list %}
-                        {% if page.items or request.params %}
-                            {% if page.items %}
-                                {% snippet "organization/snippets/organization_list.html", organizations=page.items %}
-                            {% endif %}
-                         {% endif %}
-                    {% endblock %}
-                </div>
-            </div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    var dropdownButton = document.querySelector(".Instituicao button");
-                    var dropdownContent = document.getElementById("instituidown");
-
-                    dropdownButton.addEventListener("click", function () {
-                        if (dropdownContent.classList.contains("show")) {
-                            dropdownContent.classList.remove("show");
-                            dropdownButton.setAttribute("aria-expanded", "false");
-                        } else {
-                            dropdownContent.classList.add("show");
-                            dropdownButton.setAttribute("aria-expanded", "true");
-                        }
-                    });
-                });
-            </script>
-            {% endif %}
-            {% if request.url.endswith('/dataset/') or request.url.endswith('dataset/') %}                
-
-            <div class="Curso">
-                <button type="button" data-target="#cursodown" data-toggle="collapse" class="orglist" aria-label="expand or collapse" aria-expanded="true">
-                    <span class="text">{{ _('Cursos') }}</span>
-                    <span class="fa fa-arrow-down"></span>
-                </button>
-                <div id="cursodown" class="cursodown collapse">
-                    {% block groups_list %}
-                        {% set groups = h.most_popular_groups() %}
-
-                        {% for group in groups %}
-                            <div class="box span3">
-                                {% snippet 'snippets/group_item.html', group=group, truncate=50, truncate_title=35 %}
-                            </div>
-                        {% endfor %}
-                    {% endblock %}
-                </div>
-            </div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    var dropdownButton = document.querySelector(".Curso button");
-                    var dropdownContent = document.getElementById("cursodown");
-
-                    dropdownButton.addEventListener("click", function () {
-                        if (dropdownContent.classList.contains("show")) {
-                            dropdownContent.classList.remove("show");
-                            dropdownButton.setAttribute("aria-expanded", "false");
-                        } else {
-                            dropdownContent.classList.add("show");
-                            dropdownButton.setAttribute("aria-expanded", "true");
-                        }
-                    });
-                });
-            </script>
-            {% endif %}
+            
      
          {% endblock %}
         
@@ -124,5 +54,20 @@
   {% endif %}
 {% endblock %}  
         {{ super() }}
+{% endblock %}
+
+{% block header_site_navigation_tabs %}
+{{ super() }}
+{% block organizations_list %}
+<div class="orglist">
+    {% if request.url.endswith('/organization/') or request.url.endswith('organization/') %}    
+    {% if page.items or request.params %}
+      {% if page.items %}
+        {% snippet "organization/snippets/organization_list.html", organizations=page.items %}
+      {% endif %}
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
 {% endblock %}
 
